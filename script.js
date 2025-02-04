@@ -26,7 +26,7 @@ async function getWeatherData() {
         convertBtn.style.display = "block";
         temp.innerHTML = Math.round(response.data.main.temp);
         temperatureUnit.innerHTML = "°C";
-        convertBtn.innerHTML ="Convert to Celsius";
+        convertBtn.innerHTML ="Convet to Fahrenheit";
         cityNameDisplay.innerHTML = response.data.name;
         countryNameDisplay.innerHTML = response.data.sys.country;
         humidityPercentage.innerHTML = response.data.main.humidity;
@@ -79,7 +79,7 @@ if (navigator.geolocation) {
                     const tempCelsius = response.data.main.temp - 273.15;
                     temp.innerHTML = Math.round(tempCelsius);
                     temperatureUnit.innerHTML = "°C";
-                    convertBtn.innerHTML ="Convert to Celsius";
+                    convertBtn.innerHTML ="Convet to Fahrenheit";
                     cityNameDisplay.innerHTML = response.data.name;
                     countryNameDisplay.innerHTML = response.data.sys.country;
                     humidityPercentage.innerHTML = response.data.main.humidity;
