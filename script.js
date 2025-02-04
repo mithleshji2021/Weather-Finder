@@ -32,7 +32,7 @@ async function getWeatherData() {
         convertBtn.style.display = "block";
         temp.innerHTML = Math.round(response.data.main.temp);
         temperatureUnit.innerHTML = "°C";
-        convertBtn.innerHTML = "Convet to Fahrenheit";
+        convertBtn.innerHTML = "Convert to Fahrenheit";
         
         cityNameDisplay.innerHTML = response.data.name;
         countryNameDisplay.innerHTML = response.data.sys.country;
@@ -91,7 +91,7 @@ if (navigator.geolocation) {
                     const tempCelsius = response.data.main.temp - 273.15;
                     temp.innerHTML = Math.round(tempCelsius);
                     temperatureUnit.innerHTML = "°C";
-                    convertBtn.innerHTML = "Convet to Fahrenheit";
+                    convertBtn.innerHTML = "Convert to Fahrenheit";
                     cityNameDisplay.innerHTML = response.data.name;
                     countryNameDisplay.innerHTML = response.data.sys.country;
                     humidityPercentage.innerHTML = response.data.main.humidity;
@@ -112,20 +112,22 @@ if (navigator.geolocation) {
 
 convertBtn.addEventListener("click", () => {
     const textLength = convertBtn.textContent.length
-    if (textLength === 20) {
+    
+    if (textLength === 21) {
         const tempCelsius = temp.textContent;
 
         const tempFahrenheit = (tempCelsius * 9 / 5) + 32;
         temp.innerHTML = Math.round(tempFahrenheit);
         convertBtn.innerHTML = "Convert to Celsius";
         temperatureUnit.innerHTML = "°F";
-
+        
     }
     else if (convertBtn.textContent.length === 18) {
+        
         const tempFahrenheit = temp.textContent;
         const farenheitToCelsius = (tempFahrenheit - 32) * 5 / 9;
         temp.innerHTML = Math.round(farenheitToCelsius);
-        convertBtn.innerHTML = "Convet to Fahrenheit";
+        convertBtn.innerHTML = "Convert to Fahrenheit";
         temperatureUnit.innerHTML = "°C";
 
     }
