@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="icon" href="weather-icon.webp">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+
+        <h2 id="title">Weather Finder</h2>
+
+        <div class="card">
+            
+            <div class="card-header">
+                <Input class="search-input" placeholder="Enter your city" id="city" autofocus type="text" />
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div id="error">Please enter a valid city name</div>
+
+            <div class="card-body">
+                <div class="weather-icon">
+                    <img src="weather-icon.webp" alt="weather-icon" id="weather-img" width="100px" height="100px">
+                </div>
+
+                <div class="weather-info">
+                    <div class="temperature">
+                        <h1 id="temp">20</h1><span id="temperature-unit">°C</span>
+                    </div>
+
+                    <div class="city-name">
+                        <h2 id="weather-city">Gurgaon </h2>
+                        <sub id="weather-country">India</sub>
+                    </div>
+
+                </div>
+
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i id="humidity-icon" class="fa-solid fa-droplet"></i>
+                        <h2 id="humidity-text">Humidity</h2>
+                        <div class="humidity-percentage-group">
+                            <span id="humidity-percentage">66</span><span>%</span>
+                        </div>
+
+                    </div>
+
+                    <div class="weather-condition">
+                        <i id="weather-condition-icon" class="fa-solid fa-cloud-sun"></i>
+                        <h2 id="weather-condition-text">Weather</h2>
+                        <span id="weather-condition-description">Cloudy</span>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <button id="convert-btn">Convet to Fahrenheit</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
