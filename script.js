@@ -26,12 +26,14 @@ async function getWeatherData() {
         const iconCode = response.data.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
         weatherImg.src = iconUrl;
+        
 
         cardBody.style.display = "block";
         convertBtn.style.display = "block";
         temp.innerHTML = Math.round(response.data.main.temp);
         temperatureUnit.innerHTML = "°C";
         convertBtn.innerHTML = "Convet to Fahrenheit";
+        
         cityNameDisplay.innerHTML = response.data.name;
         countryNameDisplay.innerHTML = response.data.sys.country;
         humidityPercentage.innerHTML = response.data.main.humidity;
