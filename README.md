@@ -14,6 +14,11 @@ A simple and visually appealing weather application that fetches real-time weath
 
 ---
 
+## How to run project locally
+   >> Open index.html in a browser
+    You can just double-click index.html, or
+    Use a live server in VS Code (install the Live Server extension and click "Go Live").
+
 ## Check this project 
  >> https://mithleshji2021.github.io/Weather-Finder/
 
