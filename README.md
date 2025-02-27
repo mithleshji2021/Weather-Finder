@@ -2,6 +2,9 @@
 
 A simple and visually appealing weather application that fetches real-time weather data from OpenWeatherMap API and displays temperature, humidity, and weather conditions in an interactive user interface.  
 
+
+## 🌍 Live Demo
+Check out the live application here: [Weather Finder](https://mithleshji2021.github.io/Weather-Finder/)
 ---
 
 ## 📌 Features  
@@ -14,18 +17,34 @@ A simple and visually appealing weather application that fetches real-time weath
 
 ---
 
-## How to run project locally
-   >> Open index.html in a browser
-    You can just double-click index.html, or
-    Use a live server in VS Code (install the Live Server extension and click "Go Live").
+## 🛠 Technologies Used
+- **HTML** - For structuring the web pages.
+- **Tailwind CSS** - For modern, responsive styling.
+- **JavaScript** - To add interactivity and API handling.
+- **OpenWeatherMap API** - For fetching real-time weather data.
+- **FontAwesome** - For displaying weather icons.
 
-## Check this project 
- >> https://mithleshji2021.github.io/Weather-Finder/
+---
+
+## 🚀 How to Run the Project Locally
+1. **Download or Clone the Repository:**
+   ```sh
+   git clone https://github.com/mithleshji2021/Weather-Finder.git
+   cd Weather-Finder
+   ```
+2. **Run the Application:**
+   - Open `index.html` in a browser by double-clicking it.
+   - OR, use a live server in VS Code:
+     - Install the Live Server extension.
+     - Click "Go Live" to run the project.
 
 
-## 🚀 Getting Started  
+---
 
-### 📥 1. Clone the Repository  
-```sh
-git clone https://github.com/mithleshji2021/Weather-Finder.git
-cd weather-app
+## 🤝 Contribution
+If you want to enhance this project, feel free to fork the repository and submit a pull request with improvements.
+
+---
+
+## 📜 License
+This project is open-source and available under the [MIT License](LICENSE).
